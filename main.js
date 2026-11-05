@@ -111,7 +111,10 @@ function habilidad(m){
     }
     setTimeout(
         function (){
-            contraAtaque()
+           if(charmander.vida<1){
+
+           }
+           else{ contraAtaque()}
         },1800
     )
     
