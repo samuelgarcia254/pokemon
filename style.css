@@ -1,0 +1,250 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.pantalla{
+
+    border: 4px solid rgb(1, 35, 34);
+    width: 90vw;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    
+
+}
+.pokemon1{
+
+    width: 170px;
+    height: 180px;
+    position: absolute;
+    border-radius: 40px;
+    bottom: -10px;
+    z-index: 2;
+    left: -20px;
+    
+    img{
+        width: 100%;
+    }
+
+
+}
+.pokemon2{
+    width: 170px;
+    height: 180px;
+    position: absolute;
+    border-radius: 40px;
+    right: 38px;
+    top: -80px;
+
+}
+.habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 8px;
+}
+.escudo{
+    width: 160px;
+    height: 160px;
+    background-color: rgba(142, 171, 166, 0.518);
+    border: 4px solid rgb(93, 93, 101);
+    border-radius: 16px 16px 90px 90px ;
+    position: absolute;
+    bottom: -160px;
+    left: -160px;
+}
+.saludpokeene{
+    position: absolute;
+    border: 2px solid rgba(255, 61, 2, 0.999);
+    width: 40vw;
+    height: 50px;
+    border-radius: 5px;
+    right: 195px;
+    top: 10px;
+    padding: 6px;
+}
+.saludpokeune{
+    position: absolute;
+    border: 2px solid rgb(110, 9, 204);
+    width: 40vw;
+    height: 50px;
+    border-radius: 5px;
+    bottom: 145px;
+    right: 10px;
+    padding: 6px;
+
+}
+.dialogo{
+    position: absolute;
+    border: 6px solid rgb(39, 243, 39);
+    width: 50vw;
+    height: 70px;
+    right: 10px;
+    border-radius: 10px;
+    bottom: 40px;
+    padding: 6px;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+
+
+
+
+.animacion1{
+    animation: animacion1 0.7s;
+}
+.animacion2{
+    animation: animacion2 0.6s;
+}
+.animacion3{
+    animation: animacion3 0.9s;
+}
+.animacion4{
+    animation: animacion4 0.5s;
+}
+
+.daño{
+    animation: daño 0.7s;
+}
+.escudo2{
+    animation: escudo 5.0s;
+}
+.contraAtaque{
+    animation: contraAtaque 0.8s;
+}
+
+@keyframes animacion1 {
+    0%{
+        transform: rotateZ(1deg);
+    }
+    25%{
+        transform: rotateZ(25deg) translate(0px,-150px);
+    }
+    50%{
+        transform: rotateZ(50deg) translate(30vw,-150px);
+    }
+    75%{
+        transform: rotateZ(90deg) translate(30vw,0px);
+    }
+    100%{
+        transform: rotateZ(360deg) translate(0px,0px);
+    }
+}
+@keyframes animacion2 {
+    0%{
+        transform: translate(0vw,0vh) ;
+    }
+    50%{
+        transform: translate(60vw,-500px);
+    }
+    100%{
+        transform: translate(0vw,0vh) ;
+    }
+}
+@keyframes animacion3 {
+    0%{
+        transform:rotateZ(1deg) ;
+    }
+    10%{
+        transform:rotateZ(10deg) ;
+    }
+    20%{
+        transform:rotateZ(25deg) ;
+    }
+    30%{
+        transform:rotateZ(35deg) ;
+    }
+    40%{
+        transform:rotateZ(45deg) ;
+    }
+    50%{
+        transform:rotateZ(55deg) ;
+    }
+    60%{
+        transform:rotateZ(65deg) ;
+    }
+    70%{
+        transform:rotateZ(75deg) ;
+    }
+    80%{
+        transform:rotateZ(85deg) ;
+    }
+    90%{
+        transform:rotateZ(95deg) ;
+    }
+    100%{
+        transform:rotateZ(0deg) ;
+    }
+}
+@keyframes animacion4{
+    0%{
+        transform:rotateZ(10deg) ;
+    }
+    50%{
+        transform:rotateZ(60deg) ;
+    }
+    100%{
+        transform:rotateZ(10deg) ;
+    }
+}
+@keyframes daño{
+    0%{
+        transform: scale(0.7) translate(4px,4px);
+    }
+    50%{
+        transform: scale(1) translate(-4px,0px);
+    }
+    100%{
+        transform: scale(0.7) translate(0px,0px);
+    }
+}
+@keyframes escudo{
+    0%{
+        transform: translate(100px,-100px);
+    }
+    25%{
+        transform: translate(300px,-300px);
+    }
+    50%{
+        transform: translate(150px,110px);
+    }
+    75%{
+        transform: translate(170px,200px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+
+
+}
+@keyframes contraAtaque{
+    0%{
+        transform: translate(100px,-100px);
+    }
+    25%{
+        transform: translate(-300px,300px);
+    }
+    50%{
+        transform: translate(150px,110px);
+    }
+    75%{
+        transform: translate(170px,200px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+
+
+
+
+
+}
